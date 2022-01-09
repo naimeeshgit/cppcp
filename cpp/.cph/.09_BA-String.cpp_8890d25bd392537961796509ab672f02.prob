@@ -1,0 +1,1 @@
+{"name":"Local: 09_BA-String","url":"/home/naimeesh/cpp/09_BA-String.cpp","tests":[{"id":1639994740856,"input":"3\n2 4 3\na*\n4 1 3\na**a\n6 3 20\n**a***","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/naimeesh/cpp/09_BA-String.cpp","group":"local","local":true}
