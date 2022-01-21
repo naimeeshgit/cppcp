@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"/home/naimeesh/cppcp/cf/2.cpp","tests":[{"id":1642345627981,"input":"10\n0\n1\n10057\n90\n909\n1111\n12345\n1297\n2234\n100480","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/naimeesh/cppcp/cf/2.cpp","group":"local","local":true}
