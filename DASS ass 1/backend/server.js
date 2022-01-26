@@ -11,6 +11,7 @@ var testAPIRouter = require("./routes/testAPI");
 var UserRouter = require("./routes/Users");
 var BuyerRouter = require("./routes/BuyerAPI");  // any request to /buyer will be handled by this router
 var VendorRouter = require("./routes/VendorAPI"); // any request to /vendor will be handled by this router
+var FoodItemRouter = require("./routes/FoodItem"); // any request /items 
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -28,6 +29,7 @@ app.use("/testAPI", testAPIRouter);
 app.use("/user", UserRouter);
 app.use("/buyer", BuyerRouter); // anything that goes to /buyer will be handled by this router
 app.use("/vendor", VendorRouter); // anything that goes to /vendor will be handled by this router
+app.use("/item",FoodItemRouter); // 
 
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT);

@@ -146,16 +146,38 @@ router.put("/edit", (req, res) => {
 });
 
 
-router.get("/checkbalance", (req, res) => {
+router.post("/checkbalance", (req, res) => {
 
     const id = req.body.id
-    User.findOne({id}).then(user=> {
-
-        res.json(user);
-
+    const email = req.body.email;
+    User.findOne({ email: email}).then(user=> {
+            return res.json(user);
     });
 
 });
+
+
+router.post("/addmoney", (req,res) => {
+    const id = req.body.id;
+    const email = req.body.email;
+    const transaction = req.body.wallet;
+
+    User.findOne({email : email}).then(user=> {
+        
+            user.wallet = (user.wallet) + Number(transaction);
+            console.log(user);
+            user.save()
+                .then(user => {
+                    return res.json(user);
+                })
+                .catch(err => {
+                    return res.status(400).send(err);
+                });
+            
+        
+        
+    })
+})
 
 module.exports = router;
 

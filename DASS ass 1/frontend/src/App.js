@@ -18,7 +18,7 @@ import SignIn from "./components/common/SignIn";
 
 // vendor
 import ProfileV from "./components/common/profileV";
-
+import FoodItemV from "./components/common/FoodItemV";
 
 
 const Layout = () => {
@@ -51,6 +51,7 @@ function App() {
 
           {/* Vendor */}
           <Route path="profileV" element={<ProfileV />} />
+          <Route path="foodItemV" element= {<FoodItemV/>} />
         </Route>
       </Routes>
     </BrowserRouter>

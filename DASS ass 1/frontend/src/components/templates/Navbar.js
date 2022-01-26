@@ -43,10 +43,6 @@ const Navbar = () => {
             </Button> */}
 
             {/* if localstorage.type == 1 => diff navbar*/}
-
-
-
-
             <Button color="inherit" onClick={() => navigate("/profile")}>
               My Profile
             </Button>
@@ -106,7 +102,7 @@ const Navbar = () => {
           <Button color="inherit" onClick={() => navigate("/profile")}>
             My Profile
           </Button>
-          <Button color="inherit" onClick={() => navigate("/dashboardVen")}>
+          <Button color="inherit" onClick={() => navigate("/FoodItemV")}>
             Food Menu DashBoard
           </Button>
           <Button color="inherit" onClick={() => navigate("/vieworders")}>
