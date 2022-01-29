@@ -58,8 +58,8 @@ const Navbar = () => {
             <Button color="inherit" onClick={() => navigate("/orders")}>
               Orders
             </Button>
-            <Button color="inherit" onClick={() => navigate("/fooditemlist")}>
-              Food Item List
+            <Button color="inherit" onClick={() => navigate("/BuyerMenu")}>
+              Menu
             </Button>
             <Button color="inherit" onClick = {refreshPage}>
               Sign Out

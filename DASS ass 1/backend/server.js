@@ -12,6 +12,7 @@ var UserRouter = require("./routes/Users");
 var BuyerRouter = require("./routes/BuyerAPI");  // any request to /buyer will be handled by this router
 var VendorRouter = require("./routes/VendorAPI"); // any request to /vendor will be handled by this router
 var FoodItemRouter = require("./routes/FoodItem"); // any request /items 
+var BuyerMenuRouter = require("./routes/MenuAPI");
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -30,6 +31,7 @@ app.use("/user", UserRouter);
 app.use("/buyer", BuyerRouter); // anything that goes to /buyer will be handled by this router
 app.use("/vendor", VendorRouter); // anything that goes to /vendor will be handled by this router
 app.use("/item",FoodItemRouter); // 
+app.use("/BuyerMenu",BuyerMenuRouter)
 
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT);

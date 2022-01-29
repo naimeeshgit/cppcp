@@ -11,6 +11,8 @@ import Navbar from "./components/templates/Navbar";
 // buyers
 import Profile from "./components/common/profile";
 import Wallet from "./components/common/wallet";
+import BuyerMenu from "./components/common/BuyerMenu";
+import PlaceOrder from "./components/common/PlaceOrder";
 
 // common
 import SignUp from "./components/common/SignUp";
@@ -19,6 +21,8 @@ import SignIn from "./components/common/SignIn";
 // vendor
 import ProfileV from "./components/common/profileV";
 import FoodItemV from "./components/common/FoodItemV";
+import AddItem from "./components/common/Additem";
+
 
 
 const Layout = () => {
@@ -44,6 +48,8 @@ function App() {
           {/* Buyer */}
           <Route path="profile" element={<Profile />} />
           <Route path="wallet" element={<Wallet />} />
+          <Route path="BuyerMenu" element={<BuyerMenu />} />
+          <Route path="PlaceOrder" element={<PlaceOrder />} />
 
           {/* Common */}
           <Route path="SignUp" element={<SignUp />} />
@@ -52,6 +58,7 @@ function App() {
           {/* Vendor */}
           <Route path="profileV" element={<ProfileV />} />
           <Route path="foodItemV" element= {<FoodItemV/>} />
+          <Route path="AddItem" element={<AddItem />} />
         </Route>
       </Routes>
     </BrowserRouter>

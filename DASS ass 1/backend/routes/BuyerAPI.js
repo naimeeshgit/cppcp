@@ -119,6 +119,7 @@ router.post("/login", (req, res) => {
 
 
 router.put("/edit", (req, res) => {
+    // console.log(req.body);
     const email = req.body.email;
     console.log(email);
     User.findOne({ email }).then(user => {

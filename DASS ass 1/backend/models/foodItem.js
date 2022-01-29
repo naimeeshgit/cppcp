@@ -3,14 +3,13 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const FoodSchema = new Schema({
-    vendoremail: {
+    VendorEmail: {
         type: String,
-        required: true
-
+        required: true,
     },
 	FoodName: {
 		type: String,
-		required: true
+		required: true,
 	},
 	price:{
 		type: Number,
@@ -18,7 +17,7 @@ const FoodSchema = new Schema({
 	},
     rating: {
         type: Number,
-        required: true
+        required: false
     },
     type: {
         type: Number,
