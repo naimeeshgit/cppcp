@@ -1,0 +1,1 @@
+{"name":"Local: 10_ABC","url":"/home/naimeesh/cppcp/cpp/10_ABC.cpp","tests":[{"id":1643998940388,"input":"4\n1\n1\n2\n10\n2\n01\n4\n1010","output":"YES\nYES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/naimeesh/cppcp/cpp/10_ABC.cpp","group":"local","local":true}
